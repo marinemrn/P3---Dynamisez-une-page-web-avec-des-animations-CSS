@@ -6,20 +6,20 @@
 @font-face
 {
 	font-family: 'Roboto';
-    src: url("../fonts/Roboto-regular.ttf");
+    src: url("../../fonts/Roboto-regular.ttf");
 }
 
 @font-face
 {
 	font-family: 'Roboto';
     font-weight: bold;
-    src: url("../fonts/Roboto-bold.ttf");
+    src: url("../../fonts/Roboto-bold.ttf");
 }
 
 @font-face
 {
 	font-family: 'Shrikhand';
-    src: url("../fonts/Shrikhand-Regular.ttf");
+    src: url("../../fonts/Shrikhand-Regular.ttf");
 }
 
 
