@@ -1,0 +1,22 @@
+/* CSS PAGE D'ACCUEIL DESKTOP / TABLETTE */
+
+
+@media screen and (min-width: 768px) and (max-width: 1400px)
+
+{
+
+nav ol 
+{
+    flex-direction: row;
+}
+
+.carte_menu
+{
+    width: 500px;
+}
+
+.carte_menu img 
+{
+    height: 200px;
+}
+}

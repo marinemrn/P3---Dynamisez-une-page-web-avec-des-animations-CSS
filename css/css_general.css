@@ -1,0 +1,421 @@
+/* CSS GENERAL */
+
+/* CSS PAGE D'ACCUEIL */
+
+/* POLICES */
+@font-face
+{
+	font-family: 'Roboto';
+    src: url("../fonts/Roboto-regular.ttf");
+}
+
+@font-face
+{
+	font-family: 'Roboto';
+    font-weight: bold;
+    src: url("../fonts/Roboto-bold.ttf");
+}
+
+@font-face
+{
+	font-family: 'Shrikhand';
+    src: url("../fonts/Shrikhand-Regular.ttf");
+}
+
+
+/* ----------------------------------------------------ANIMATION CHARGEMENT---------------------------------------------------- */
+
+.loader
+{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+
+.loader-side
+{
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 200px auto;
+    border-radius: 60px;
+    border-top: 4px solid #9356DC;
+    border-right: 4px solid rgba(91, 25, 93, 0.4);
+    border-bottom: 4px solid #9356DC;
+    border-left: 4px solid rgba(91, 25, 93, 0.4);
+    animation-name: spin;
+    animation: spin 1200ms linear 2  forwards;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+       overflow: hidden;
+    }
+    100%{
+        transform: rotate(360deg);
+        visibility: hidden;
+    }
+}
+
+.loaderstart
+{
+    animation: whitepage 5s;
+}
+
+@keyframes whitepage {
+    0%{
+        opacity: 0;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+
+/* ----------------------------------------------------EN-TETE---------------------------------------------------- */
+
+.header
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.logo
+{
+    width: 150px;
+}
+
+#localisation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #c2c2c2;
+    color: #7a7a7a;
+    box-shadow: 0px 10px 10px -10px #666 inset;
+}
+
+.icone_localisation
+{
+    padding: 10px;
+}
+
+.ville
+{
+    font-weight: 4;
+}
+
+#en_tete
+{
+    display: flex;
+    background-color: #f3f3f3;
+    padding: 50px;
+    align-items: center;
+    flex-direction: column;
+}
+
+#en_tete h2
+{
+    text-align: center;
+    max-width: 250px;
+    margin: 0;
+}
+
+#en_tete p
+{
+    text-align: center;
+    width: 300px;
+}
+
+
+.button_page_daccueil 
+{
+    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    color: white;
+    padding: 15px;
+    box-shadow: 0px 0px 15px 0px #6a6a6a;
+    border-radius: 200px;
+    border: none;
+    margin-top: 15px;
+}
+
+.button_page_daccueil:hover
+{
+    transform: scale(1.08);
+}
+
+
+
+/* ----------------------------------------------------CORPS---------------------------------------------------- */
+
+body 
+{
+	font-family: 'Roboto';
+    margin: 0;
+}
+
+main
+{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#bloc_info
+{
+    display: flex;
+    padding: 25px;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+}
+
+nav 
+{
+    width: 95%;
+    flex-direction: column;
+}
+
+nav h2
+{
+    margin: 0;
+    font-weight: bold;
+
+}
+
+nav ol 
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+}
+
+nav ol li 
+{
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    margin: 10px 20px;
+    box-shadow: 0px 0px 10px 0px #c4c4c4;
+    border-radius: 20px;
+}
+nav ol li:hover
+{
+    background-color: #E9DAF2;
+    box-shadow: 0px 0px 30px 0px #c4c4c4;
+    transform: scale(1.05);
+}
+
+nav i
+{
+    margin-left: 20px;
+    color: #7a7a7a;
+
+}
+nav a 
+{
+    margin-left: 25px;
+}
+
+nav p 
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.chiffre
+{
+    background-color: #9356dc;
+    color: white;
+    position: absolute;
+    padding: 3px 8px 3px 8px;
+    border-radius: 500px;
+    margin-left: -10px;
+}
+
+.section_restaurants
+{
+    display: flex;
+    background: #f6f6f6;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.section_restaurants h2
+{
+    margin-left: -200px;
+    margin-bottom: 30px;
+}
+
+.carte_menu 
+{
+    position: relative;
+    flex-direction: column;
+    width: 330px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px 0px #c4c4c4;
+}
+
+.carte_menu:hover
+{
+    box-shadow: 0px 0px 30px 0px #c4c4c4;
+    transform: scale(1.08); 
+}
+
+.carte_menu img
+{
+    width: 100%;
+    object-fit: cover;
+    height: 180px;
+    border-radius: 20px 20px 0 0;
+}
+
+.nouveau
+{
+    color: #1b6150;
+}
+
+.new 
+{
+    position: absolute;
+    background: #99e2d0;
+    right: 20px;
+    padding: 7px;
+}
+ 
+.description_carte
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    margin-bottom: 20px;
+}
+
+.description_carte a
+{
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.titre_carte
+{
+    color: black;
+    text-decoration: none;
+    line-height: 0;
+}
+
+h3 
+{
+    margin-bottom: 22px;
+}
+
+.button_coeur
+{
+    display: grid;
+    padding: 20px;
+    
+}
+
+.button_coeur i
+{
+    color: rgb(255, 93, 93);
+}
+
+.coeur_remplissage 
+{
+    transition: all 0.3s linear 0s;
+    width: 100%;
+    height: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.button_coeur:hover .coeur_remplissage
+{
+    height: 100%; 
+}
+
+.button_coeur .coeur_vide
+{
+    opacity: 1;
+    color: #424242;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.button_coeur .coeur_plein
+{
+    opacity: 0;
+    color: rgb(255, 93, 93);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.button_coeur .coeur_plein:hover
+{
+    transition: opacity 0.3s linear 0s;
+    opacity: 1;
+
+}
+
+
+
+/* ----------------------------------------------------FOOTER---------------------------------------------------- */
+
+
+footer 
+{
+    background-color: #424242;
+    color: white;
+    width: 100%;
+    padding: 20px 0 20px 0;
+}
+
+footer img 
+{
+    width: 144px;
+    margin-left: 10px;
+    margin-bottom: -30px;
+    margin-top: -25px;
+}
+
+footer ul 
+{
+    list-style-type: none;
+    padding-left: 0px;
+    margin-left: 15px;
+}
+
+footer ul li
+{
+    line-height: 30px;
+    margin-left: 15px;
+}
+
+footer ul a {
+    text-decoration: none;
+    color: black;
+    color: white;
+}
+
+footer ul a.icone_footer1
+ {
+    margin-left: 15px;
+}
+
+footer ul a.icone_footer2
+ {
+    margin-left: 9px;
+}
+
