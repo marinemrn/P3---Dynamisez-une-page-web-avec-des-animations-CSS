@@ -48,7 +48,8 @@
     animation: spin 1200ms linear 2  forwards;
 }
 
-@keyframes spin {
+@keyframes spin 
+{
     0%{
         transform: rotate(0deg);
        overflow: hidden;
@@ -64,7 +65,8 @@
     animation: whitepage 5s;
 }
 
-@keyframes whitepage {
+@keyframes whitepage 
+{
     0%{
         opacity: 0;
     }
@@ -366,7 +368,6 @@ h3
 {
     transition: opacity 0.3s linear 0s;
     opacity: 1;
-
 }
 
 

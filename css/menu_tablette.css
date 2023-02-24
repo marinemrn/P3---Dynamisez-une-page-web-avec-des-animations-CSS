@@ -9,14 +9,15 @@
 {
     
 
-header
-{
-    margin-right: 280px;
-}
+
 
 
 /* ----------------------------------------------------CORPS---------------------------------------------------- */
 
+.bloc_menu
+{
+    height: 1190px;
+}
 
 .plats
 {
@@ -28,10 +29,6 @@ header
     margin-right: -30px;
 }
 
-.button_commander
-{
-    margin-left: 330px;
-}
 
 .box
 {
