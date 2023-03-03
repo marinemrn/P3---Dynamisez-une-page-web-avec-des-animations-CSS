@@ -3,7 +3,7 @@
 
 /* MOBILE */
 
-@media screen and (max-width: 1400px)
+@media screen and (max-width: 1920px)
 {
     @font-face
     {
@@ -44,6 +44,7 @@ h1 /* nom restaurant */
 {
     font-family: 'Shrikhand';
     font-weight: bold;
+    font-size: 28px;
     margin-left: 15px;
     margin-top: 30px;
 }
@@ -84,7 +85,7 @@ h1 /* nom restaurant */
 
 .button_coeur i
 {
-    color: rgb(255, 93, 93);
+    color: #9356dc;
 }
 
 
@@ -105,7 +106,7 @@ h1 /* nom restaurant */
 .button_coeur .coeur_plein
 {
     opacity: 0;
-    color: rgb(255, 93, 93);
+    color: #9356dc;
     grid-column: 1;
     grid-row: 1;
 }
@@ -131,6 +132,7 @@ h2
     width: 65px;
     line-height: 40px;
     font-weight: 1;
+    font-size: 18px;
 
 }
 
@@ -209,10 +211,11 @@ h3 /* nom plat */
     width: 93%;
     background-color: white;
     margin: 10px;
+    margin-bottom: 15px;
     cursor: pointer;
     height: 65px;
     border-radius: 1rem;
-    box-shadow: 0px 5px 10px #bfbfbf;
+    box-shadow: 0px 0px 10px 0px #c4c4c4;
     overflow: hidden;
     animation: slide-in 3s linear;
 }
@@ -303,7 +306,8 @@ h3 /* nom plat */
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    margin: 10px 0;
+    margin: 5px 0;
+    word-spacing: 1px;
 }
 
 .box__description div p:nth-child(2)
@@ -350,7 +354,7 @@ footer
     color: white;
     width: 100%;
     padding: 20px 0 20px 0;
-    margin-top: 1310px;
+    margin-top: 1325px;
 }
 
 footer img

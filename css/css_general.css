@@ -79,17 +79,23 @@
 
 /* ----------------------------------------------------EN-TETE---------------------------------------------------- */
 
+p
+{
+    font-size: 17px;
+}
+
 .header
 {
     display: flex;
     justify-content: center;
     width: 100%;
     padding: 20px;
+    margin-bottom: -7px;
 }
 
 .logo
 {
-    width: 150px;
+    width: 166px;
 }
 
 #localisation
@@ -97,14 +103,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #c2c2c2;
-    color: #7a7a7a;
-    box-shadow: 0px 10px 10px -10px #666 inset;
+    background: #e6e6e6;
+    color: #212121;
+    box-shadow: 0px 8px 10px -10px #666 inset;
 }
 
 .icone_localisation
 {
     padding: 10px;
+    margin-right: 9px;
 }
 
 .ville
@@ -131,19 +138,24 @@
 #en_tete p
 {
     text-align: center;
-    width: 300px;
+    width: 400px;
+    font-size: 20px;
 }
 
 
 .button_page_daccueil 
 {
-    background: linear-gradient(180deg, #ff79da 0%, #9356dc 100%);
+    background: linear-gradient(180deg, #ff79da -43%, #9356dc 100%);
     color: white;
     padding: 15px;
-    box-shadow: 0px 0px 15px 0px #6a6a6a;
+    box-shadow: 0px 7px 14px 0px #b0b0b0;
     border-radius: 200px;
     border: none;
     margin-top: 15px;
+    margin-bottom: 5px;
+    width: 235px;
+    height: 53px;
+    font-size: medium;
 }
 
 .button_page_daccueil:hover
@@ -190,9 +202,8 @@ nav
 
 nav h2
 {
-    margin: 0;
     font-weight: bold;
-
+    margin-left: 10px;
 }
 
 nav ol 
@@ -209,8 +220,16 @@ nav ol li
     align-items: center;
     background: #f6f6f6;
     margin: 10px 20px;
-    box-shadow: 0px 0px 10px 0px #c4c4c4;
+    box-shadow: 0px 7px 14px 0px #d7d4d4;
     border-radius: 20px;
+    height: 70px;
+    width: 335px;
+}
+
+.icone-menu
+{
+    margin: 0px 7px 0px 45px;
+    font-size: 19px;
 }
 
 
@@ -261,7 +280,7 @@ nav p
 {
     position: relative;
     flex-direction: column;
-    width: 330px;
+    width: 383px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px 0px #c4c4c4;
 }
@@ -301,6 +320,7 @@ nav p
     width: 100%;
     height: 70px;
     margin-bottom: 20px;
+    word-spacing: 1px;
 }
 
 .description_carte a
@@ -330,7 +350,7 @@ h3
 
 .button_coeur i
 {
-    color: rgb(255, 93, 93);
+    color: #9356dc;
 }
 
 .coeur_remplissage 
@@ -359,7 +379,7 @@ h3
 .button_coeur .coeur_plein
 {
     opacity: 0;
-    color: rgb(255, 93, 93);
+    color: #9356dc;
     grid-column: 1;
     grid-row: 1;
 }
