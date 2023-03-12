@@ -1,7 +1,7 @@
 /* CSS PAGE D'ACCUEIL DESKTOP / TABLETTE */
 
 
-@media screen and (min-width: 768px) and (max-width: 1920px)
+@media screen and (min-width: 768px)
 
 {
 
@@ -10,7 +10,7 @@ nav ol
     flex-direction: row;
 }
 
-.carte_menu
+
 {
     width: 500px;
 }
@@ -19,4 +19,9 @@ nav ol
 {
     height: 200px;
 }
+
+/* .section_restaurants h2
+{
+    margin-left: -370px;
 }
+} */
